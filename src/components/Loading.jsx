@@ -8,7 +8,7 @@ export default function Loading({ children }) {
     const pathName = usePathname()
     const PageRef = useRef(null)
     // console.log(pathName)
-    const stairParentRef = useRef();
+    const stairParentRef = useRef(null);
     useGSAP(function () {
         const tl = gsap.timeline()
         tl.to(stairParentRef.current, {

@@ -7,7 +7,7 @@ function MainHeroText() {
     "text-white text-[9.5vw] flex justify-center items-center uppercase leading-[8vw]";
   return (
     <>
-      <div className="font-[font1] text-center pt-5">
+      <div className="font-[font1] text-center pt-10">
         <div className={Text}>The spark for</div>
         <div className={Text}>
           All

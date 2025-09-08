@@ -1,5 +1,7 @@
 import Loading from "@/components/Loading";
 import "./globals.css";
+import Navbar from "@/components/Navigation/Navbar";
+import NavContext from "../context/NavContext";
 
 export const metadata = {
   title: "Create Next App",
@@ -9,10 +11,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body
-      >
+      <body>
         <Loading>
-          {children}
+          {/* <Navbar/> */}
+          <NavContext>{children}</NavContext>
         </Loading>
       </body>
     </html>

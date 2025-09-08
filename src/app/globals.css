@@ -1,14 +1,14 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 
-@font-face{
+@font-face {
   font-family: font1;
-  src: url('../../public/assets/Fonts/Lausanne-300.woff2');
+  src: url("../../public/assets/Fonts/Lausanne-300.woff2");
 }
 
-@font-face{
+@font-face {
   font-family: font2;
-  src: url('../../public/assets/Fonts/Lausanne-500.woff2');
+  src: url("../../public/assets/Fonts/Lausanne-500.woff2");
 }
 
 @custom-variant dark (&:is(.dark *));
@@ -130,3 +130,29 @@
     @apply bg-background text-foreground;
   }
 }
+
+.moveX {
+  animation-name: moveAnimation;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.moveXchild {
+  opacity: 0;
+}
+
+.moveXparent .moveXchild:hover {
+  opacity: 1;
+  transition: all ease-in-out 0.3s;
+}
+
+@keyframes moveAnimation {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
