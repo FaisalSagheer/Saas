@@ -1,6 +1,5 @@
 "use client";
-import { Navbar } from "@/components/Navbar";
-import React from "react";
+import React, { Suspense } from "react";
 import Video from "./_components/Video";
 import { Button } from "@/components/ui/button";
 import MainHeroText from "./_components/MainHeroText";
@@ -16,12 +15,12 @@ function Home() {
         <div>
           <MainHeroText />
         </div>
-        <div className="font-[font2] flex justify-center items-center gap-4">
+        <div className="font-[font2] overflow-hidden flex justify-center items-center gap-4">
           <Button variant="ghost" size={"lg"}>
             <Link href="/">Work</Link>
           </Button>
           <Button variant="ghost" size={"lg"}>
-            <Link href="/">Agency</Link>
+            <Link href="/agency">Agency</Link>
           </Button>
         </div>
       </div>
