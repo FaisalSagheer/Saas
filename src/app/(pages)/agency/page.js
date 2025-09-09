@@ -50,7 +50,7 @@ function Agency() {
                     <img ref={imgRef} src='./assets/agencyImages/Carl.jpg' alt='/' className='h-full w-full object-cover rounded-2xl' />
                 </div>
                 <div className='font-[font2] relative'>
-                    <div className='mt-[55vh]'>
+                    <div className='mt-[55vh]'> 
                         <h1 className='text-[20vw] text-center uppercase leading-[18vw]'>
                             SEVEN7Y<br />
                             TWO
