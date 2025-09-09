@@ -1,13 +1,15 @@
 "use client";
-import React, { Suspense } from "react";
-import Video from "./_components/Video";
+import React from "react";
+import Video from "./components/Video";
 import { Button } from "@/components/ui/button";
-import MainHeroText from "./_components/MainHeroText";
+import MainHeroText from "./components/MainHeroText";
 import Link from "next/link";
+import FullScreenNavbar from "@/components/Navigation/FullScreenNavbar";
 
 function Home() {
   return (
     <div>
+      <FullScreenNavbar/>
       <div className="h-full w-full fixed">
         <Video />
       </div>

@@ -1,8 +1,10 @@
 "use client";
-import React, { useRef } from "react";
+import { NavbarContext } from "@/context/NavContext";
+import React, { useContext, useRef } from "react";
 
 const Navbar = () => {
   const navRef = useRef(null);
+  const [navOpen,setNavopen] = useContext(NavbarContext)
   return (
     <>
       <div>
@@ -25,6 +27,9 @@ const Navbar = () => {
           </div>
           <div className="w-[16vw] relative">
             <div
+            onClick={()=>{
+              setNavopen(true)
+            }}
               onMouseEnter={() => {
                 navRef.current.style.height = "100%";
               }}

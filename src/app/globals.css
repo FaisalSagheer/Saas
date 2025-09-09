@@ -138,13 +138,13 @@
   animation-timing-function: linear;
 }
 
-.moveXchild {
+.moveLink {
   opacity: 0;
+  transition: all ease-in-out 0.3s;
 }
 
-.moveXparent .moveXchild:hover {
+.link .moveLink:hover {
   opacity: 1;
-  transition: all ease-in-out 0.3s;
 }
 
 @keyframes moveAnimation {

@@ -1,12 +1,19 @@
-'use client'
-import React from 'react'
-const NavContext = ({children}) => {
+"use client";
+
+import React, { createContext, useState } from "react";
+
+export const NavbarContext = createContext();
+const NavContext = ({ children }) => {
+
+  const [navOpen, setNavopen] = useState(false);
   return (
     <div>
-      {children}
+      <NavbarContext.Provider value={[navOpen, setNavopen]}>
+        {children}
+      </NavbarContext.Provider>
     </div>
-  )
-}
+  );
 
-export default NavContext
+};
 
+export default NavContext;

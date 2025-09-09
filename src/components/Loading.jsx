@@ -5,9 +5,8 @@ import { usePathname } from 'next/navigation'
 import React, { useRef } from 'react'
 
 export default function Loading({ children }) {
-    const pathName = usePathname()
-    const PageRef = useRef(null)
-    // console.log(pathName)
+    const pathName = usePathname();
+    const PageRef = useRef(null);
     const stairParentRef = useRef(null);
     useGSAP(function () {
         const tl = gsap.timeline()
