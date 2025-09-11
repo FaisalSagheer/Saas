@@ -1,5 +1,6 @@
 "use client";
 import { WorkContent } from "@/app/constant";
+import Footer from "@/components/Footer";
 import FullScreenNavbar from "@/components/Navigation/FullScreenNavbar";
 import WorkCard from "@/components/Work/WorkCard";
 import { useGSAP } from "@gsap/react";
@@ -50,6 +51,7 @@ const Work = () => {
           </div>
         </div>
       {/* </ReactLenis> */}
+      <Footer/>
     </>
   );
 };
