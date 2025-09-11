@@ -7,7 +7,7 @@ const Buttons = () => {
   return (
    <div className="font-[font2] overflow-hidden flex justify-center items-center gap-4 pb-3">
           <Button variant="ghost" size="lg">
-            <Link href="/">Work</Link>
+            <Link href="/work">Work</Link>
           </Button>
           <Button variant="ghost" size="lg">
             <Link href="/agency">Agency</Link>
