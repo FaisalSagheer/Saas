@@ -10,7 +10,7 @@ const WorkCard = (props) => {
   
   return (
     <>
-          <div className="w-1/2 relative group transition-all rounded-none hover:rounded-[70px] h-full overflow-hidden">
+          <div className="lg:w-1/2 relative group transition-all rounded-none hover:rounded-[70px] h-full overflow-hidden">
             <img
               className="h-full w-full object-cover"
               src={props.Img1}
@@ -22,7 +22,7 @@ const WorkCard = (props) => {
               </h2>
             </span>
           </div>
-          <div className="w-1/2 relative group transition-all rounded-none hover:rounded-[70px] h-full overflow-hidden">
+          <div className="lg:w-1/2 relative group transition-all rounded-none hover:rounded-[70px] h-full overflow-hidden">
             <img
               className="h-full w-full object-cover"
               src={props.Img2}

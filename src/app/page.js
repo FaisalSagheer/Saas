@@ -7,7 +7,6 @@ import FullScreenNavbar from "@/components/Navigation/FullScreenNavbar";
 export default function Page() {
   return (
     <>
-      
       <Home />
     </>
   );

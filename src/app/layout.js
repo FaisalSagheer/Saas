@@ -12,10 +12,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body>
+      <body suppressHydrationWarning>
         <Loading>
           <NavContext>
             <Navbar />
+            <FullScreenNavbar/>
             {children}
           </NavContext>
         </Loading>

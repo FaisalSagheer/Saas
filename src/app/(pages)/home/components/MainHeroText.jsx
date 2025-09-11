@@ -4,10 +4,10 @@ import Video from "./Video";
 
 function MainHeroText() {
   const Text =
-    "text-white text-5xl md:text-9xl lg:text-[9.5vw] flex justify-center items-center uppercase leading-[12vw] lg:leading-[8vw]";
+    "text-white text-6xl md:text-9xl lg:text-[9.5vw] flex justify-center items-center uppercase leading-[12vw] lg:leading-[8vw]";
   return (
     <>
-      <div className="font-[font1] text-center pt-40 lg:pt-10">
+      <div className="font-[font2] lg:font-[font1] text-center pt-100 md:pt-50 lg:pt-10">
         <div className={Text}>The spark for</div>
         <div className={Text}>
           All

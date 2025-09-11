@@ -84,12 +84,12 @@ function FullScreenNavbar() {
       </div>
       <div className="relative" ref={fullScreenNavLinksRef}>
         <div className="navLink flex w-full justify-between items-start p-3">
-          <div className="lg:w-36 w-24 cursor-pointer">
+          <div className="lg:w-50 w-32 cursor-pointer">
             <Link href="/">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                width="103"
-                height="44"
+                // width="130"
+                // height="52"
                 viewBox="0 0 103 44"
               >
                 <path
@@ -101,13 +101,13 @@ function FullScreenNavbar() {
             </Link>
           </div>
           <div
-            className="h-32 w-32 relative cursor-pointer"
+            className="h-22 lg:h-32 w-24 lg:w-32 relative cursor-pointer"
             onClick={() => {
               setNavopen(false);
             }}
           >
-            <div className="absolute origin-top right-0 w-1 h-44 bg-white hover:bg-[#D3FD50] rotate-45 rounded-full"></div>
-            <div className="absolute origin-top w-1 h-44 bg-white hover:bg-[#D3FD50] -rotate-45 rounded-full"></div>
+            <div className="absolute origin-top right-0 w-0.5 lg:w-1  h-34 lg:h-44 bg-white hover:bg-[#D3FD50] rotate-45 rounded-full"></div>
+            <div className="absolute origin-top w-0.5 lg:w-1 h-34 lg:h-44 bg-white hover:bg-[#D3FD50] -rotate-45 rounded-full"></div>
           </div>
         </div>
         <div className="py-36">
@@ -117,47 +117,47 @@ function FullScreenNavbar() {
               key={item.id}
             >
               <Link href={item.href}>
-              <h1 className="font-[font2] text-[8vw] text-center uppercase leading-[0.7] pt-10">
-                {item.title}
-              </h1>
-              <div className="absolute top-0 flex bg-[#D3FD50] moveLink">
-                <div className="moveX flex items-center">
-                  <h2 className="font-[font2] text-[8vw] whitespace-nowrap uppercase leading-[0.7] pt-10">
-                    {item.hoverLink}
-                  </h2>
-                  <img
-                    className="h-30 rounded-full shrink-0 w-96 object-cover"
-                    src={item.img1}
-                    alt="/"
-                  />
-                  <h2 className="font-[font2] text-[8vw] whitespace-nowrap uppercase leading-[0.7] pt-7">
-                    {item.hoverLink}
-                  </h2>
-                  <img
-                    className="h-30 rounded-full shrink-0 w-96 object-cover"
-                    src={item.img2}
-                    alt="/"
-                  />
+                <h1 className="font-[font2] text-7xl lg:text-[8vw] text-center uppercase leading-[0.7] pt-8 pb-2 lg:pb-0 lg:pt-10">
+                  {item.title}
+                </h1>
+                <div className="absolute top-0 flex bg-[#D3FD50] moveLink py-1 lg:py-0">
+                  <div className="moveX flex items-center">
+                    <h2 className="font-[font2] text-7xl lg:text-[8vw] whitespace-nowrap uppercase leading-[0.7] pt-6 pb-2 lg:pb-0 lg:pt-10">
+                      {item.hoverLink}
+                    </h2>
+                    <img
+                      className="h-18 lg:h-30 w-80 lg:w-96 rounded-full shrink-0 object-cover"
+                      src={item.img1}
+                      alt="/"
+                    />
+                    <h2 className="font-[font2] text-7xl lg:text-[8vw] whitespace-nowrap uppercase leading-[0.7] pt-6 pb-2 lg:pb-0 lg:pt-10">
+                      {item.hoverLink}
+                    </h2>
+                    <img
+                      className="h-18 lg:h-30 w-80 lg:w-96 rounded-full shrink-0 object-cover"
+                      src={item.img2}
+                      alt="/"
+                    />
+                  </div>
+                  <div className="moveX flex items-center">
+                    <h2 className="font-[font2] text-7xl lg:text-[8vw] whitespace-nowrap uppercase leading-[0.7] pt-6 pb-2 lg:pb-0 lg:pt-10">
+                      {item.hoverLink}
+                    </h2>
+                    <img
+                      className="h-18 lg:h-30 w-80 lg:w-96 rounded-full shrink-0 object-cover"
+                      src={item.img1}
+                      alt="/"
+                    />
+                    <h2 className="font-[font2] text-7xl lg:text-[8vw] whitespace-nowrap uppercase leading-[0.7] pt-6 pb-2 lg:pb-0 lg:pt-10">
+                      {item.hoverLink}
+                    </h2>
+                    <img
+                      className="h-18 lg:h-30 w-80 lg:w-96 rounded-full shrink-0 object-cover"
+                      src={item.img2}
+                      alt="/"
+                    />
+                  </div>
                 </div>
-                <div className="moveX flex items-center">
-                  <h2 className="font-[font2] text-[8vw] whitespace-nowrap uppercase leading-[0.7] pt-10">
-                    {item.hoverLink}
-                  </h2>
-                  <img
-                    className="h-30 rounded-full shrink-0 w-96 object-cover"
-                    src={item.img1}
-                    alt="/"
-                  />
-                  <h2 className="font-[font2] text-[8vw] whitespace-nowrap uppercase leading-[0.7] pt-7">
-                    {item.hoverLink}
-                  </h2>
-                  <img
-                    className="h-30 rounded-full shrink-0 w-96 object-cover"
-                    src={item.img2}
-                    alt="/"
-                  />
-                </div>
-              </div>
               </Link>
             </div>
           ))}

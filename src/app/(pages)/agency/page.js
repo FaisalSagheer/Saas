@@ -46,11 +46,11 @@ function Agency() {
   });
   return (
     <ReactLenis root>
-      <FullScreenNavbar />
+      {/* <FullScreenNavbar /> */}
       <div className="py-48">
         <div
           ref={imgDivRef}
-          className="h-[20vw] w-[15vw] absolute top-96 left-[30vw]"
+          className="h-[80vw] lg:h-[20vw] w-[50vw] lg:w-[15vw] absolute top-60 lg:top-70 left-[20vw] lg:left-[30vw] "
         >
           <img
             ref={imgRef}
@@ -61,14 +61,14 @@ function Agency() {
         </div>
         <div className="font-[font2] relative">
           <div className="mt-[55vh]">
-            <h1 className="text-[20vw] text-center uppercase leading-[18vw]">
+            <h1 className="text-8xl lg:text-[20vw] text-center uppercase leading-[18vw]">
               SEVEN7Y
               <br />
               TWO
             </h1>
           </div>
-          <div className="pl-[40%]">
-            <p className="text-6xl">
+          <div className="lg:pl-[40%] lg:mt-20 p-3 lg:p-0">
+            <p className="text-xl lg:text-6xl">
               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; We’re
               inquisitive and open-minded, and we make sure creativity crowds
               out ego from every corner. A brand is a living thing, with values,
@@ -79,7 +79,7 @@ function Agency() {
           </div>
         </div>
         <div className="mt-60 font-[font1] text-xl font-semibold">
-          <div className="grid grid-cols-1 lg:grid-cols-2 lg:pl-28">
+          <div className="grid grid-cols-2 pl-10 lg:pl-28">
             <div>
               <h3 className="text-xl font-semibold">Expertise</h3>
             </div>
@@ -93,7 +93,7 @@ function Agency() {
               </ul>
             </div>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 max-w-7xl mx-auto gap-20 py-40">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 max-w-7xl mx-auto gap-10 lg:gap-20 py-40 lg:px-0 px-10">
             <p>
               Our Work_ Born in curiosity, raised by dedication and fed with a
               steady diet of creativity.

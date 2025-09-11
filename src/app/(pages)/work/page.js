@@ -1,5 +1,6 @@
 "use client";
 import { WorkContent } from "@/app/constant";
+import FullScreenNavbar from "@/components/Navigation/FullScreenNavbar";
 import WorkCard from "@/components/Work/WorkCard";
 import { useGSAP } from "@gsap/react";
 import ReactLenis from "@studio-freight/react-lenis";
@@ -12,13 +13,13 @@ const Work = () => {
 
   useGSAP(function () {
     gsap.from(".imgAnimation", {
-      height: "60px",
+      height: "100px",
       stagger: {
         amount: 0.1
       },
       scrollTrigger: {
         trigger: ".imgContainer",
-        markers: true,
+        // markers: true,
         start: "top 100%",
         end: "top -150%",
         scrub: true,
@@ -27,18 +28,19 @@ const Work = () => {
   });
   return (
     <>
-      <ReactLenis root>
-        <div className="p-4 -mb-[100vh]">
-          <div className="pt-[30vh]">
-            <h1 className="font-[font2] text-[16vw] text-black uppercase">
+      {/* <ReactLenis root> */}
+      {/* <FullScreenNavbar/> */}
+        <div className="p-4">
+          <div className="pt-[45vh]">
+            <h1 className="font-[font2] text-8xl lg:text-[16vw] text-black uppercase">
               Work
             </h1>
           </div>
-          <div className="-mt-30 imgContainer">
+          <div className="imgContainer">
             {WorkContent.map(function (work, indx) {
               return (
                 <div
-                  className="w-full h-[850px] mb-4 flex gap-4 imgAnimation"
+                  className="w-full h-[700px] mb-4 flex flex-col lg:flex-row gap-2 lg:gap-4 imgAnimation"
                   key={indx}
                 >
                   <WorkCard Img1={work.Img1} Img2={work.Img2} />
@@ -47,7 +49,7 @@ const Work = () => {
             })}
           </div>
         </div>
-      </ReactLenis>
+      {/* </ReactLenis> */}
     </>
   );
 };
