@@ -110,7 +110,7 @@ function FullScreenNavbar() {
             <div className="absolute origin-top w-0.5 lg:w-1 h-34 lg:h-44 bg-white hover:bg-[#D3FD50] -rotate-45 rounded-full"></div>
           </div>
         </div>
-        <div className="py-36">
+        <div className="py-20">
           {Navlinks.map((item) => (
             <div
               className="origin-top border-y-1 border-white relative link"
