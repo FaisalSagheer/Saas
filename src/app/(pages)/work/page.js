@@ -10,11 +10,11 @@ import React, { useRef } from "react";
 gsap.registerPlugin(ScrollTrigger);
 const Work = () => {
 
-  useGSAP(function(){
+  useGSAP(function () {
     gsap.from(".imgAnimation", {
       height: "60px",
-      stagger:{
-        amount:0.1
+      stagger: {
+        amount: 0.1
       },
       scrollTrigger: {
         trigger: ".imgContainer",
@@ -35,13 +35,13 @@ const Work = () => {
             </h1>
           </div>
           <div className="-mt-30 imgContainer">
-            {WorkContent.map(function (work,indx) {
+            {WorkContent.map(function (work, indx) {
               return (
                 <div
                   className="w-full h-[850px] mb-4 flex gap-4 imgAnimation"
                   key={indx}
                 >
-                  <WorkCard Img1={work.Img1} Img2={work.Img2} href={work.href}/>
+                  <WorkCard Img1={work.Img1} Img2={work.Img2} />
                 </div>
               );
             })}
