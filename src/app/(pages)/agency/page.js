@@ -6,71 +6,29 @@ import { ScrollTrigger } from "gsap/all";
 import ReactLenis from "@studio-freight/react-lenis";
 import FullScreenNavbar from "@/components/Navigation/FullScreenNavbar";
 import Footer from "@/components/Footer";
+import Expertise from "./components/Expertise";
+import ImageAnimation from "./components/ImageAnimation";
+import ImageAnimationWithTitle from "./components/ImageAnimationWithTitle";
+import Team from "./components/Team";
+import Projects from "./components/Projects";
 
 function Agency() {
-  const imageArray = [
-    "./assets/agencyImages/Carl.jpg",
-    "./assets/agencyImages/Lawrence.jpg",
-    "./assets/agencyImages/CAMILLE.jpg",
-    "./assets/agencyImages/ChantalG.jpg",
-    "./assets/agencyImages/Michele.jpg",
-    "./assets/agencyImages/MyleneS.jpg",
-  ];
-  gsap.registerPlugin(ScrollTrigger);
-  const imgDivRef = useRef();
-  const imgRef = useRef();
-  useGSAP(function () {
-    gsap.to(imgDivRef.current, {
-      scrollTrigger: {
-        trigger: imgDivRef.current,
-        // markers: true,
-        start: "top 28%",
-        end: "top -140%",
-        pin: true,
-        pinSpacing: true,
-        pinReparent: true,
-        pinType: "transform",
-        scrub: true,
-        anticipatePin: 1,
-        invalidateOnRefresh: true,
-        onUpdate: (ele) => {
-          let imageIndex;
-          if (ele.progress < 1) {
-            imageIndex = Math.floor(ele.progress * imageArray.length);
-          } else {
-            imageIndex = imageArray.length - 1;
-          }
-          imgRef.current.src = imageArray[imageIndex];
-        },
-      },
-    });
-  });
   return (
     <>
       <ReactLenis root>
         {/* <FullScreenNavbar /> */}
-        <div className="py-48">
-          <div
-            ref={imgDivRef}
-            className="h-[80vw] lg:h-[20vw] w-[50vw] lg:w-[15vw] absolute top-60 lg:top-70 left-[20vw] lg:left-[30vw] "
-          >
-            <img
-              ref={imgRef}
-              src="./assets/agencyImages/Carl.jpg"
-              alt="/"
-              className="h-full w-full object-cover rounded-2xl"
-            />
-          </div>
+        <div className="py-1 lg:py-48">
+          <ImageAnimation />
           <div className="font-[font2] relative">
             <div className="mt-[55vh]">
-              <h1 className="text-8xl lg:text-[20vw] text-center uppercase leading-[18vw]">
+              <h1 className="text-8xl lg:text-[20vw] text-center uppercase leading-[18vw] transition">
                 SEVEN7Y
                 <br />
                 TWO
               </h1>
             </div>
             <div className="lg:pl-[40%] lg:mt-20 p-3 lg:p-0">
-              <p className="text-xl lg:text-6xl">
+              <p className="text-xl lg:text-6xl transition">
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 We’re inquisitive and open-minded, and we make sure creativity
                 crowds out ego from every corner. A brand is a living thing,
@@ -81,38 +39,14 @@ function Agency() {
               </p>
             </div>
           </div>
-          <div className="mt-60 font-[font1] text-xl font-semibold">
-            <div className="grid grid-cols-2 pl-10 lg:pl-28">
-              <div>
-                <h3 className="text-xl font-semibold">Expertise</h3>
-              </div>
-              <div className="lg:pr-[38%]">
-                <ul>
-                  <li>Strategy</li>
-                  <li>Adverstising</li>
-                  <li>Branding</li>
-                  <li>Design</li>
-                  <li>Content</li>
-                </ul>
-              </div>
-            </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 max-w-7xl mx-auto gap-10 lg:gap-20 py-40 lg:px-0 px-10">
-              <p>
-                Our Work_ Born in curiosity, raised by dedication and fed with a
-                steady diet of creativity.
-              </p>
-              <p className="whitespace-break-spaces">
-                Our Creative_ Simmering in an environment where talent can come
-                to a full boil. Encouraged to become the best versions of
-                ourselves.
-              </p>
-              <p>
-                Our Culture_ We’re open to each other. Period. The team works
-                together to create a space that makes us proud.
-              </p>
-            </div>
-          </div>
+          <Expertise />
         </div>
+        {/* <div className="relative flex justify-center items-center">
+          <ImageAnimationWithTitle />
+        </div> */}
+        <Team/>
+        
+        <Projects/>
       </ReactLenis>
       <Footer />
     </>
