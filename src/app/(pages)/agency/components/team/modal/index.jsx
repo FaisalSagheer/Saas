@@ -25,11 +25,11 @@ function Modal({ modal, team }) {
     const moveContainerX = gsap.quickTo(container.current, "left", {
       duration: 0.8,
       ease: "power3",
-    });
+    })
     const moveContainerY = gsap.quickTo(container.current, "top", {
       duration: 0.8,
       ease: "power3",
-    });
+    })
     window.addEventListener("mouseover", (e) => {
       const { clientX, clientY } = e;
       moveContainerX(clientX);
@@ -42,7 +42,7 @@ function Modal({ modal, team }) {
         className="modalContainer z-10"
         variants={ScaleAnimation}
         initial={"initial"}
-        animate={active ? "open" : "closed"}
+        animate={active?"open":"closed"}
       >
         <div
           style={{ top: index * -100 + "%" }}

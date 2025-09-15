@@ -164,7 +164,7 @@
 }
 
 .modalContainer {
-  height: 350px;
+  height: 550px;
   width: 400px;
   display: flex;
   align-items: center;
@@ -173,12 +173,11 @@
   overflow: hidden;
   top: 20rem;
   left: 28rem;
-  /* pointer-events: none; */
+  pointer-events: none;
 }
 
 .modalSlider {
   height: 100%;
-  width: 100%;
   transition: top 0.5s cubic-bezier(0.76, 0, 0.24, 1);
 }
 
