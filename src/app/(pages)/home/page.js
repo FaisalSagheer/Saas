@@ -8,7 +8,6 @@ import Paragraph from "./components/Paragraph";
 function Home() {
   return (
     <div>
-      {/* <FullScreenNavbar /> */}
       <div className="text-white">
         <div className="h-full w-full fixed">
           <Video />
@@ -18,6 +17,7 @@ function Home() {
           <Paragraph/>
         </div>
       </div>
+      <FullScreenNavbar />
     </div>
   );
 }

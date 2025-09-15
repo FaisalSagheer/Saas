@@ -1,4 +1,5 @@
 @import "tailwindcss";
+
 @import "tw-animate-css";
 
 @font-face {
@@ -126,6 +127,7 @@
   * {
     @apply border-border outline-ring/50;
   }
+  
   body {
     @apply bg-background text-foreground;
   }
@@ -151,11 +153,45 @@
   from {
     transform: translateX(0);
   }
+  
   to {
     transform: translateX(-100%);
   }
 }
 
-.stickyCards{
+.stickyCards {
   transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 314, 0, 1);
+}
+
+.modalContainer {
+  height: 350px;
+  width: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+}
+
+.modalSlider {
+  /* overflow: hidden; */
+  /* z-index: .44; */
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  transition: top 0.5s cubic-bezier(0.76, 0, 0.24,1);
+  /* overflow: hidden; */
+}
+
+.modal {
+  position: relative;
+  /* top: 13rem;
+  right:-18rem; */
+  height: 100%;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+}
+
+.modal img {
+  height: auto;
 }

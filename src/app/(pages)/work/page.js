@@ -30,7 +30,6 @@ const Work = () => {
   return (
     <>
       {/* <ReactLenis root> */}
-      {/* <FullScreenNavbar/> */}
         <div className="p-4">
           <div className="pt-[45vh]">
             <h1 className="font-[font2] text-8xl lg:text-[16vw] text-black uppercase">

@@ -6,49 +6,10 @@ import { Link } from "lucide-react";
 import React, { useRef } from "react";
 
 function ProjectCard() {
-  //   gsap.registerPlugin(ScrollTrigger);
-  //   const cont = useRef(null);
-  //   useGSAP(
-  //     () => {
-  //       const stickyCards = document.querySelectorAll(".stickyCard");
-  //       stickyCards.forEach((card, index) => {
-  //         if (index < stickyCards.length - 1) {
-  //           ScrollTrigger.create({
-  //             trigger: card,
-  //             start: "top top",
-  //             endTrigger: stickyCards[stickyCards.length - 1],
-  //             end: "center center",
-  //             pin: true,
-  //             pinSpacing: false,
-  //             markers:true
-  //           });
-  //         }
-  // if (index < stickyCards.length - 1) {
-  //   ScrollTrigger.create({
-  //     trigger: stickyCards[index + 1],
-  //     start: "top top",
-  //     end: "top bottom",
-  //     onUpdate: (self) => {
-  //       const progress = self.progress;
-  //       const scale = 1 - progress * 0.25;
-  //       const rotation = (index % 2 === 0 ? 5 : -5) * progress;
-  //       const afterOpacity = progress;
-  //       gsap.set(card, {
-  //         scale: scale,
-  //         rotation: rotation,
-  //         opacity:afterOpacity
-  //       });
-  //     },
-  //   });
-  // }
-  //   });
-  // },
-  // { scope: cont }
-  //   );
+  
   return (
     <div
       className="w-full h-full flex justify-center flex-col items-center transition-all"
-      //   ref={cont}
     >
       {WorkContent.map((WorkContent, index) => (
         <div className="-z-10 stickyCard sticky -top-80" key={index}>

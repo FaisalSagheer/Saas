@@ -1,5 +1,6 @@
 "use client";
 import Footer from "@/components/Footer";
+import FullScreenNavbar from "@/components/Navigation/FullScreenNavbar";
 import ReactLenis from "@studio-freight/react-lenis";
 import React from "react";
 
@@ -56,8 +57,8 @@ const Blogs = () => {
             </div>
           </div>
         </div>
-        <Footer />
       </ReactLenis>
+        <Footer />
     </>
   );
 };

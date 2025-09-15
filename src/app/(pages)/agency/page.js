@@ -1,21 +1,17 @@
-"use client";
+
+"use client"
 import React, { useRef } from "react";
-import { useGSAP } from "@gsap/react";
-import gsap from "gsap";
-import { ScrollTrigger } from "gsap/all";
 import ReactLenis from "@studio-freight/react-lenis";
-import FullScreenNavbar from "@/components/Navigation/FullScreenNavbar";
 import Footer from "@/components/Footer";
 import Expertise from "./components/Expertise";
 import ImageAnimation from "./components/ImageAnimation";
-import ImageAnimationWithTitle from "./components/ImageAnimationWithTitle";
-import Team from "./components/Team";
-import Projects from "./components/Projects";
+import Team from "./components/team/Team";
+import ProjectCard from "./components/ProjectCard";
 
 function Agency() {
   return (
     <>
-      <ReactLenis root>
+      {/* <ReactLenis root> */}
         {/* <FullScreenNavbar /> */}
         <div className="py-1 lg:py-48">
           <ImageAnimation />
@@ -44,12 +40,13 @@ function Agency() {
         {/* <div className="relative flex justify-center items-center">
           <ImageAnimationWithTitle />
         </div> */}
+        
         <Team/>
         
-        <Projects/>
-      </ReactLenis>
+        <ProjectCard/>
       <Footer />
-    </>
+      {/* </ReactLenis> */}
+</>
   );
 }
 

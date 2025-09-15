@@ -1,18 +1,11 @@
 "use client";
+import { imageArray } from "@/app/constant";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/all";
 import React, { useRef } from "react";
 
 const ImageAnimationWithTitle = () => {
-  const imageArray = [
-    "./assets/agencyImages/Carl.jpg",
-    "./assets/agencyImages/Lawrence.jpg",
-    "./assets/agencyImages/CAMILLE.jpg",
-    "./assets/agencyImages/ChantalG.jpg",
-    "./assets/agencyImages/Michele.jpg",
-    "./assets/agencyImages/MyleneS.jpg",
-  ];
   gsap.registerPlugin(ScrollTrigger);
   const imgDivRef = useRef();
   const imgRef = useRef();

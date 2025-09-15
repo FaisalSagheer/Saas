@@ -1,3 +1,5 @@
+
+'use client'
 export const Navlinks = [
   {
     id: 1,
@@ -61,39 +63,33 @@ export const imageArray = [
 ];
 export const TeamIntro = [
   {
-    id: 1,
-    Title: "Account Executive",
-    img: "./assets/agencyImages/carl.jpg",
+    title: "Account Executive",
+    src: "./assets/agencyImages/Carl.jpg",
     subTitle: "Carl Godbout",
   },
   {
-    id: 2,
-    Title: "Account Executive",
-    img: "./assets/agencyImages/CAMILLE.jpg",
+    title: "Account Executive",
+    src: "./assets/agencyImages/CAMILLE.jpg",
     subTitle: "Carl Godbout",
   },
   {
-    id: 3,
-    Title: "Account Executive",
-    img: "./assets/agencyImages/ChantalG.jpg",
+    title: "Account Executive",
+    src: "./assets/agencyImages/ChantalG.jpg",
     subTitle: "Carl Godbout",
   },
   {
-    id: 4,
-    Title: "Account Executive",
-    img: "./assets/agencyImages/Claire.jpg",
+    title: "Account Executive",
+    src: "./assets/agencyImages/Claire.jpg",
     subTitle: "Carl Godbout",
   },
   {
-    id: 5,
-    Title: "Account Executive",
-    img: "./assets/agencyImages/carl.jpg",
+    title: "Account Executive",
+    src: "./assets/agencyImages/Carl.jpg",
     subTitle: "Carl Godbout",
   },
   {
-    id: 6,
-    Title: "Account Executive",
-    img: "./assets/agencyImages/carl.jpg",
+    title: "Account Executive",
+    src: "./assets/agencyImages/Carl.jpg",
     subTitle: "Carl Godbout",
   },
 ];
