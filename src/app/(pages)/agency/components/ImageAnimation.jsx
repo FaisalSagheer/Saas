@@ -46,7 +46,7 @@ const ImageAnimation = () => {
           ref={imgRef}
           src="./assets/agencyImages/Carl.jpg"
           alt="/"
-          className="h-full w-full object-cover rounded-2xl"
+          className="lg:h-full lg:w-full object-cover rounded-2xl"
         />
       </div>
     </>

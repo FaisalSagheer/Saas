@@ -9,14 +9,14 @@ function ProjectCard() {
   
   return (
     <div
-      className="w-full h-full flex justify-center flex-col items-center transition-all"
+      className="w-full h-full flex justify-center flex-col items-center transition-all bg-black pt-80"
     >
       {WorkContent.map((WorkContent, index) => (
-        <div className="stickyCard sticky -top-80" key={index}>
+        <div className="sticky -top-80" key={index}>
           <div className="w-full h-full gap-3 will-change-transform">
             <img
               src={WorkContent.Img1}
-              className="w-[100vw] rounded-4xl"
+              className="w-[100vw] rounded-t-4xl"
               alt="/"
             />
             <span className="group-hover:opacity-100 absolute bottom-0 left-0 h-full w-full font-[font2] text-center flex items-center justify-center bg-black/40">

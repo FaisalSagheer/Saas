@@ -159,9 +159,6 @@
   }
 }
 
-.stickyCards {
-  transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 314, 0, 1);
-}
 
 .modalContainer {
   height: 550px;
@@ -171,8 +168,8 @@
   justify-content: center;
   position: absolute;
   overflow: hidden;
-  top: 20rem;
-  left: 28rem;
+  top: 40rem;
+  left: 38rem;
   pointer-events: none;
 }
 
@@ -182,6 +179,4 @@
 }
 
 
-.modal img {
-  height: auto;
-}
+

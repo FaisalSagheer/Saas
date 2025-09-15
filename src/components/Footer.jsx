@@ -29,7 +29,7 @@ function Footer() {
               </h4>
           </div>
         </div>
-        <div className="flex justify-center flex-wrap lg:flex-nowrap gap-3 lg:gap-4 text-lg font-[font2] py-4 uppercase">
+        <div className="flex justify-center flex-wrap lg:flex-nowrap gap-3 lg:gap-14 text-lg font-[font2] py-4 uppercase">
           <div>
             <h5>Privacy Policy</h5>
           </div>

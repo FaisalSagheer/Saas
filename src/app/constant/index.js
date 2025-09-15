@@ -60,6 +60,7 @@ export const imageArray = [
   "./assets/agencyImages/ChantalG.jpg",
   "./assets/agencyImages/Michele.jpg",
   "./assets/agencyImages/MyleneS.jpg",
+  "./assets/agencyImages/MyleneS.jpg",
 ];
 export const TeamIntro = [
   {
@@ -68,28 +69,61 @@ export const TeamIntro = [
     subTitle: "Carl Godbout",
   },
   {
-    title: "Account Executive",
+    title: "Copywriter",
     src: "./assets/agencyImages/CAMILLE.jpg",
-    subTitle: "Carl Godbout",
+    subTitle: "Camille",
   },
   {
-    title: "Account Executive",
+    title: "Account Manager",
     src: "./assets/agencyImages/ChantalG.jpg",
-    subTitle: "Carl Godbout",
+    subTitle: "Chantal",
   },
   {
-    title: "Account Executive",
+    title: "Art Director",
     src: "./assets/agencyImages/Claire.jpg",
-    subTitle: "Carl Godbout",
+    subTitle: "Claire",
   },
   {
-    title: "Account Executive",
-    src: "./assets/agencyImages/Carl.jpg",
-    subTitle: "Carl Godbout",
+    title: "EVP & Managing Director",
+    src: "./assets/agencyImages/Olivier.jpg",
+    subTitle: "Pierre-Luc Paiement",
   },
   {
-    title: "Account Executive",
-    src: "./assets/agencyImages/Carl.jpg",
-    subTitle: "Carl Godbout",
+    title: "Director of Strategy",
+    src: "./assets/agencyImages/Lawrence.jpg",
+    subTitle: "Mélanie Laviolett",
   },
+  {
+    title: "Account Director",
+    src: "./assets/agencyImages/HugoJoseph.jpg",
+    subTitle: "Philippe Perreault",
+  },
+  
+  {
+    title: "Strategist",
+    src: "./assets/agencyImages/joel.jpg",
+    subTitle: "Béatrice Roussin",
+  },
+  
+  {
+    title: "Account Coordinator",
+    src: "./assets/agencyImages/MAXIME.jpg",
+    subTitle: "Lou Gravel-Jean",
+  },
+  {
+    title: "Senior Director",
+    src: "./assets/agencyImages/SebR.jpg",
+    subTitle: "Hélène Conti",
+  },
+  {
+    title: "Senior Associate Director",
+    src: "./assets/agencyImages/bg-img.jpg",
+    subTitle: "Joël Letarte",
+  },
+  {
+    title: "Graphic Designer",
+    src: "./assets/agencyImages/Olivier.jpg",
+    subTitle: "Olivier Duclos",
+  },
+  
 ];

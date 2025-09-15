@@ -4,7 +4,7 @@ import React, { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
 import gsap from "gsap";
 function Modal({ modal, team }) {
-  const ScaleAnimation = {
+  const scaleAnimation = {
     initial: { scale: 0, x: "-50%", y: "-50%" },
     open: {
       scale: 1,
@@ -40,7 +40,7 @@ function Modal({ modal, team }) {
     <>
       <motion.div
         className="modalContainer z-10"
-        variants={ScaleAnimation}
+        variants={scaleAnimation}
         initial={"initial"}
         animate={active?"open":"closed"}
       >
@@ -59,7 +59,7 @@ function Modal({ modal, team }) {
                   src={`./${src}`}
                   width={300}
                   height={0}
-                  className="rounded-2xl"
+                  className="rounded-2xl lg:w-full lg:h-full"
                   alt={title}
                 />
               </div>
