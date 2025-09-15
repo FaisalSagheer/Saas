@@ -12,7 +12,7 @@ function ProjectCard() {
       className="w-full h-full flex justify-center flex-col items-center transition-all"
     >
       {WorkContent.map((WorkContent, index) => (
-        <div className="-z-10 stickyCard sticky -top-80" key={index}>
+        <div className="stickyCard sticky -top-80" key={index}>
           <div className="w-full h-full gap-3 will-change-transform">
             <img
               src={WorkContent.Img1}

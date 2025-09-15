@@ -26,12 +26,12 @@ const Team = () => {
     })
   })
 
-  // const [modal, setModal] = useState({ active: false, index: 0 })
+  const [modal, setModal] = useState({ active: false, index: 0 })
 
   return (
     <>
-      {/* <main>
-        <div>
+      <main className='relative'>
+        <div className='z-30'>
           {
             TeamIntro.map((team, index) => {
               return <Card key={index} index={index} title={team.title} subTitle={team.subTitle} setModal={setModal} />
@@ -39,9 +39,9 @@ const Team = () => {
           }
         </div>
         <Modal modal={modal} team={TeamIntro} />
-      </main> */}
+      </main>
 
-      <h4 className='text-center text-7xl font-[font2] pb-10'>Our Team</h4>
+      {/* <h4 className='text-center text-7xl font-[font2] pb-10'>Our Team</h4>
       <div className='relative grid grid-cols-3 gap-3 py-2 font-[font1] text-white' ref={imgCont}>
         {TeamIntro.map((team, index) =>
           <div className='text-center flex justify-center items-center' key={index} ref={imgPerson}>
@@ -52,7 +52,7 @@ const Team = () => {
             </div>
           </div>
         )}
-      </div>
+      </div> */}
     </>
   )
 }
