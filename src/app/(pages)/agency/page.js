@@ -11,7 +11,7 @@ import ProjectCard from "./components/ProjectCard";
 function Agency() {
   return (
     <>
-      {/* <ReactLenis root> */}
+      <ReactLenis root>
         {/* <FullScreenNavbar /> */}
         <div className="py-1 lg:py-48">
           <ImageAnimation />
@@ -44,8 +44,8 @@ function Agency() {
         <Team/>
         
         <ProjectCard/>
+      </ReactLenis>
       <Footer />
-      {/* </ReactLenis> */}
 </>
   );
 }
