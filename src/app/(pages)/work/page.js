@@ -21,7 +21,7 @@ const Work = () => {
       scrollTrigger: {
         trigger: ".imgContainer",
         // markers: true,
-        start: "top 100%",
+        start: "top 80%",
         end: "top -150%",
         scrub: true,
       },
@@ -29,7 +29,7 @@ const Work = () => {
   });
   return (
     <>
-      {/* <ReactLenis root> */}
+      <ReactLenis root>
         <div className="p-4">
           <div className="pt-[45vh]">
             <h1 className="font-[font2] text-8xl lg:text-[16vw] text-black uppercase">
@@ -49,7 +49,7 @@ const Work = () => {
             })}
           </div>
         </div>
-      {/* </ReactLenis> */}
+      </ReactLenis>
       <Footer/>
     </>
   );

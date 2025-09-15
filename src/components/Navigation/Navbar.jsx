@@ -14,12 +14,12 @@ const Navbar = () => {
       <div>
         <div className="z-4 flex fixed top-0 w-full items-start justify-between">
           <div className="p-3">
-            <div className="w-32 lg:w-36">
+            <div className="w-32 lg:w-50">
               <Link href="/">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  width="103"
-                  height="44"
+                  width="137"
+                  height="68"
                   viewBox="0 0 103 44"
                 >
                   <path
