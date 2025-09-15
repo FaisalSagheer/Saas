@@ -6,6 +6,7 @@ import 'swiper/css';
 import 'swiper/css/free-mode';
 import 'swiper/css/scrollbar';
 import { FreeMode, Scrollbar, Mousewheel } from 'swiper/modules';
+import ReactLenis from '@studio-freight/react-lenis';
 export default function Contact () {
   const H2 = "text-lg lg:text-2xl text-center w-[8rem] lg:w-[12vw]";
   const Icon = "border-2 rounded-full px-6 pt-2"
@@ -20,6 +21,8 @@ export default function Contact () {
       //   modules={[FreeMode, Scrollbar, Mousewheel]}
       //   className="mySwiper"
       //  >
+      <ReactLenis root>
+
         <div className="bg-black text-white overflow-hidden font-[font1] lg:font-[font2]">
           <div className="ele">
             <div className="flex justify-center lg:justify-between flex-col lg:flex-row items-center flex-wrap lg:flex-nowrap lg:px-20 pt-40 lg:pt-10 leading-45">
@@ -72,6 +75,7 @@ export default function Contact () {
             </div>
           </div>
         </div>
+        </ReactLenis>
       //  </Swiper>
 
 )
